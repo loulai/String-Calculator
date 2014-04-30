@@ -1,7 +1,7 @@
 module StringCalculator
 
 	def add(number)
-		0
+		number.to_i
 	end
 
 end
