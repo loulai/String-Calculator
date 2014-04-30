@@ -16,4 +16,12 @@ describe StringCalculator do
   	expect(dummy_class.add('1')).to eq(1)
   end
 
+  it "can convert '1,2' to [1, 2]" do
+  	expect(dummy_class.convert_to_integer('1,2')).to eq([1, 2])
+  end
+
+  it "can add '1,2' string and return the integer 3" do
+  	expect(dummy_class.add('1,2')).to eq(3)
+  end
+
 end
